@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/neo-47/Desktop/DQN/experiments/Breakout-v0/checkpoints/model"
+all_model_checkpoint_paths: "/home/neo-47/Desktop/DQN/experiments/Breakout-v0/checkpoints/model"
