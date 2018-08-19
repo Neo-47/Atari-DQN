@@ -154,8 +154,8 @@ def deep_q_learning(sess, env, q_estimator, target_estimator, state_processor, n
 
 			# This is where double Q-learning comes in.
 			q_values_next = q_estimator.predict(sess, next_states_batch)
-            best_actions = np.argmax(q_values_next, axis = 1)
-            q_values_next_target = target_estimator.predict(sess, next_states_batch)
+            		best_actions = np.argmax(q_values_next, axis = 1)
+            		q_values_next_target = target_estimator.predict(sess, next_states_batch)
 			targets_batch = reward_batch + np.invert(done_batch).astype(np.float32) * discount_factor * q_values_next_target[np.arange(batch_size), best_actions]
 
 			# Perform gradient descent update.
