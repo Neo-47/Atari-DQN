@@ -103,7 +103,7 @@ of the Q-network at iteration *i* and minused *θi* are the network parameters u
 target at iteration *i*. The target network parameters are only updated with the Q-network parameters
 *θi* every C steps and are held fixed between individual updates.
 
-## The Algortihm Pseudocode
+## The Algorithm Pseudocode
 
 The tasks considered are those in which an agent interacts with an environment, in this
 case the Atari emulator, in a sequence of actions, observations and rewards. At each
