@@ -56,9 +56,9 @@ oscillations much more unlikely.
 In a nutshell, This approach has several advantages over standard online Q-learning.
 First, each step of experience is potentially used in many weight updates, which allows
 for greater data efficiency. Second, learning directly from consecutive samples
-is inefficient, owing to the strong correlations between the sampels: randomizing
-the samples breaks these correlations and therefore reduces the variance of the udpates.
-By using exprience replay, the behaviour distribution is averaged over many of its previous
+is inefficient, owing to the strong correlations between the samples: randomizing
+the samples breaks these correlations and therefore reduces the variance of the updates.
+By using experience replay, the behaviour distribution is averaged over many of its previous
 states, smoothing out learning and avoiding oscillations or divergence in the parameters.
 
 This is a comparison of the DQN agent with the best reinforcement learning methods in the 
